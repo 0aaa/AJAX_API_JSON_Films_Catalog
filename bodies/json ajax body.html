@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../stylesheets/stylesheet.css">
+    <title>Films</title>
+</head>
+<body>
+    <form id="search_film_form">
+        Title:
+        <input type="text" id="film_title_inpt">
+        <div id="type_selector_div">
+            Type:
+            <select id="type_selector"></select>
+        </div>
+        <button type="submit" id="search_films_btn" class="width_100">Search</button>
+    </form>
+    <div id="getted_films_div"></div>
+    <div class="animated_loaders_div"></div>
+    <button id="load_more_films">More</button>
+    
+    <div id="film_info_window">
+        <div id="film_info_body">
+            <div class="animated_loaders_div"></div>
+        </div>
+    </div>
+
+    <script src="../javascripts/json ajax javascript.js"></script>
+    <script src="../javascripts/json ajax movieservice class javascript.js"></script>
+    <script src="../javascripts/styles json ajax javascript.js"></script>
+</body>
+</html>

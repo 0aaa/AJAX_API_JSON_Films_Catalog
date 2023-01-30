@@ -1,0 +1,33 @@
+#film_info_window{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: none;
+    background: rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+#film_info_window:target{
+    display: flex;
+    pointer-events: auto;
+}
+
+.animated_loaders_div:after{
+    content: ' ';
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 20px solid black;
+    border-color: black transparent black transparent;
+    animation: animated_loader_div 2s linear infinite;
+}
+@keyframes animated_loader_div{
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
